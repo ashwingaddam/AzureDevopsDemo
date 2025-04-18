@@ -1,0 +1,5 @@
+name,type,value,description
+asset_1,text,asset_value,this is an test
+asset_2,integer,1234,
+asset_3,boolean,FALSE,
+asset_4,credential,username::password,
