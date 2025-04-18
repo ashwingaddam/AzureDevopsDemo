@@ -9,14 +9,11 @@ variables:
   # The full path to the folder containing the project.json file for this pipeline
   projectPath: project.json
   # The name of the folder to deploy the package to.
-  folderName: Shared
+  folderName: CBP
   # Either AutoVersion to generate a build number or CurrentVersion to match the project.json version.
   versioningStrategy: AutoVersion
   # The orchestrator tenant to deploy to. Not used, but may be useful if deploying to multiple tenants.
-  tenant: DEV
-  # The environments to update the package version to the deployed version. 
-  # Not required for modern folders or if you do not want to update the package version.
-  environments: ''
+  tenant: AgTest
 
 # Update this trigger to specify when the pipeline should run.
 # Variables cannot be used here.
@@ -48,4 +45,3 @@ extends:
     projectPath: $(projectPath)
     folderName: $(folderName)
     versioningStrategy: $(versioningStrategy)
-    environments: $(environments)
